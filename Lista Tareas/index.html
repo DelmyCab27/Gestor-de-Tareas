@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Gestor de Tareas</h1>
+        <div class="row">
+            <!-- Columna izquierda para el formulario de gestión de tareas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="task-form">
+                            <div class="form-group">
+                                <label for="task-name">Nombre de la Tarea:</label>
+                                <input type="text" id="task-name" class="form-control" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="start-date">Fecha de Inicio:</label>
+                                    <input type="date" id="start-date" class="form-control" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="due-date">Fecha de Fin:</label>
+                                    <input type="date" id="due-date" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="assignee">Responsable:</label>
+                                <input type="text" id="assignee" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Agregar Tarea</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna derecha para el formulario de búsqueda y lista de tareas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <input type="text" id="search" class="form-control" placeholder="Buscar tareas...">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" onclick="searchTasks()">Buscar</button>
+                            </div>
+                        </div>
+                        <div class="btn-group mb-3" role="group" aria-label="Filtros">
+                            <button type="button" class="btn btn-outline-secondary" onclick="filterTasks('all')">Todas</button>
+                            <button type="button" class="btn btn-outline-secondary" onclick="filterTasks('completed')">Resueltas</button>
+                            <button type="button" class="btn btn-outline-secondary" onclick="filterTasks('overdue')">Vencidas</button>
+                        </div>
+                        <div id="task-list" class="mt-4">
+                            <!-- Lista de tareas se insertará aquí dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

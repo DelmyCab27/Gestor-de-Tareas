@@ -1,0 +1,164 @@
+/* Estilos personalizados */
+
+/* Contenedor principal */
+.container {
+    max-width: 2000px;
+    margin: auto;
+    padding: 50px;
+    background-color: #f9fafb; /* Fondo gris claro */
+}
+
+/* Tarjetas */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fffbeb; /* Amarillo pastel */
+}
+
+.card-body {
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.bg-success {
+    background-color: #acfeb7 !important; /* Verde pastel */
+}
+
+.bg-danger {
+    background-color: #f8c8c8 !important; /* Rojo pastel */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5174ad; /* Gris oscuro */
+}
+
+.card-text {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #4b5563; /* Gris intermedio */
+}
+
+.text-center {
+    color: #1d4ed8; /* Azul oscuro */
+}
+
+.text-muted {
+    font-size: 1rem;
+    color: #000000; /* Gris claro */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #3b82f6; /* Azul pastel */
+    border-color: #3b82f6;
+    color: #fff; /* Texto blanco */
+}
+
+.btn-primary:hover {
+    background-color: #aed2ff; /* Azul más claro */
+    border-color: #60a5fa;
+}
+
+.btn-outline-success {
+    background-color: #0ca678; /* Verde pastel */
+    color: #ffffff; /* Texto verde oscuro */
+}
+
+.btn-outline-success:hover {
+    background-color: #3ac16b; /* Verde más claro */
+    color: #fff; /* Texto blanco */
+}
+
+.btn-outline-danger {
+    background-color: #d38282; /* Rojo pastel */
+    border-color: #d38282;
+    color: #ffffff; /* Texto rojo oscuro */
+}
+
+.btn-outline-danger:hover {
+    background-color: #e96a6a; /* Rojo más claro */
+    border-color: #ff6b6b;
+    color: #fff; /* Texto blanco */
+}
+
+/* Contenedor de botones */
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Formulario */
+form {
+    background-color: #e0f2fe; /* Azul muy claro */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    color: #1e40af; /* Azul oscuro */
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cbd5e1; /* Gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f1f5f9; /* Fondo gris muy claro */
+}
+
+form input:focus, form select:focus {
+    border-color: #3b82f6; /* Azul pastel */
+    outline: none;
+}
+
+form button {
+    background-color: #f47278; /* Rosa pastel */
+    border: none;
+    padding: 10px 20px;
+    color: #fff; /* Texto blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ec4899; /* Rosa más oscuro */
+}
+
+/* General */
+body {
+    background-color: #c2cee4; /* Fondo gris claro */
+}
+
+button {
+    white-space: nowrap;
+}
+
+input[type="text"], input[type="date"], select {
+    background-color: #e0f2fe; /* Azul muy claro */
+    border: 1px solid #b6d2ff; /* Azul pastel */
+    color: #00227e; /* Azul oscuro */
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    background-color: #bfdbfe; /* Azul más claro */
+    border-color: #3b82f6; /* Azul pastel */
+}
+
+textarea {
+    background-color: #fff7ed; /* Naranja pastel */
+    border: 1px solid #fb923c; /* Naranja */
+    color: #9a3412; /* Naranja oscuro */
+}
+
+textarea:focus {
+    background-color: #ffedd5; /* Naranja más claro */
+    border-color: #fb923c; /* Naranja */
+}
